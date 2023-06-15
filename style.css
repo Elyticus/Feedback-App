@@ -93,7 +93,7 @@ img {
 }
 
 ::placeholder {
-  color: #ae77ff;
+  color: #f7ffaf;
 
   line-height: 18px;
   letter-spacing: 2px;
@@ -213,4 +213,19 @@ ul li {
 .senderName {
   color: rgb(204, 0, 255);
   font-style: italic;
+}
+
+@media all and (max-width: 350px) {
+  #textarea {
+    width: 280px;
+  }
+
+  .publish {
+    width: 310px;
+  }
+
+  #from_input,
+  #to_input {
+    width: 100px;
+  }
 }
