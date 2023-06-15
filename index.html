@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Document Title -->
+    <title>FeedBack App</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&family=IBM+Plex+Sans:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <!-- CSS Style Link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <img src="assets/logo.png" alt="" />
+
+      <h1 id="title">Share your thoughts</h1>
+
+      <textarea
+        name="Feedback Field"
+        id="textarea"
+        cols="20"
+        rows="10"
+        placeholder="Add your thought here..."
+      ></textarea>
+
+      <div class="form_field">
+        <input id="from_input" type="text" placeholder="From" />
+        <input id="to_input" type="text" placeholder="To" />
+      </div>
+
+      <button type="button" class="publish">Publish</button>
+
+      <p class="endorsements">- Your Awesome Messages -</p>
+
+      <div>
+        <ul id="display_feedback"></ul>
+      </div>
+    </div>
+
+    <!-- JavaScript File Link -->
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
