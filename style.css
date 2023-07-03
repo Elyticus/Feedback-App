@@ -189,25 +189,13 @@ ul li {
   font-weight: bold;
 }
 
-.flex {
+#heart-icon {
   display: flex;
-  justify-content: space-between;
-}
+  justify-content: end;
 
-.like {
-  display: flex;
-  align-items: center;
-}
-
-.heart-icon {
   cursor: pointer;
   color: rgb(255, 208, 0);
   letter-spacing: 5px;
-}
-
-.heart-icon {
-  display: flex;
-  justify-content: end;
 }
 
 .reciverName,

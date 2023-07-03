@@ -91,8 +91,6 @@ function clearTextArea() {
   toElement.value = "";
 }
 
-// Like Button____________________________________________________________________
-
 function appaendMessagesList(feedbackValue) {
   displayFeedback.innerHTML += `
      <li class="message">
@@ -101,6 +99,38 @@ function appaendMessagesList(feedbackValue) {
        <div class = "flex">
        <p class = "senderName"><span class = "sender">From:</span> ${feedbackValue.messageFrom}</p>
        </div>
+       <div class="block">
+       <i class="fa-regular fa-heart" id="heart-icon"></i>
+       <span id="number-of-likes">0</span>
+     </div>
      </li>
      `;
+
+  // Variables
+
+  const likeBtn = document.getElementById("heart-icon");
+  const numberOfLikesElement = document.getElementById("number-of-likes");
+
+  let numberOfLikes = Number.parseInt(numberOfLikesElement.textContent, 10);
+  let isLiked = false;
+
+  // Functions
+
+  const likeClick = () => {
+    if (!isLiked) {
+      likeBtn.classList.add("isLiked");
+      numberOfLikes++;
+      numberOfLikesElement.textContent = numberOfLikes;
+      isLiked = !isLiked;
+    } else {
+      likeBtn.classList.remove("isLiked");
+      numberOfLikes--;
+      numberOfLikesElement.textContent = numberOfLikes;
+      isLiked = !isLiked;
+    }
+  };
+
+  // Event Listeners
+
+  likeBtn.addEventListener("click", likeClick);
 }
