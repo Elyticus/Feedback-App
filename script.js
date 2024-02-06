@@ -51,7 +51,7 @@ pushButton.addEventListener("click", () => {
 
     fromElement.style.border = "2px solid #EA3C3E";
     toElement.style.border = "2px solid #EA3C3E";
-    textareaElement.placeholder = " ";
+    textareaElement.placeholder = "This cannot be empty";
 
     textareaElement.classList.remove("shake");
 
